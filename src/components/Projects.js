@@ -4,13 +4,13 @@ const Projects = () => {
         name: 'Smart To-Do List',
         description: 'This website features a text classification machine learning model built with Scikit-Learn. As you enter a task, the site automatically classifies it as either "work" or "personal," making it easier for users to organize their to-do list by category.',
         video: '/videos/Smart-To-Do-oct13.mp4',
-        technologies: ['React', 'Scikit-Learn', 'Flask', 'CSS3', 'HTML5']
+        technologies: ['React.js', 'Scikit-Learn', 'Flask']
       },
       
     ];
   
     return (
-      <section style={styles.section}>
+      <section id="projects" style={styles.section}>
         <h2 style={styles.title}>My Projects</h2>
         <div style={styles.projectContainer}>
           {projectList.map((project, index) => (
@@ -38,13 +38,13 @@ const Projects = () => {
   };
   
   const styles = {
-    section: { padding: '100px', textAlign: 'center', color: 'white' },
+    section: { padding: '100px', textAlign: 'center', color: '#fff' },
     title: { fontSize: '36px', fontWeight: 'bold' },
     projectContainer: { display: 'flex', justifyContent: 'center', flexWrap: 'wrap' },
-    projectCard: { width: '300px', margin: '20px', padding: '20px', backgroundColor: '#333', borderRadius: '8px' },
+    projectCard: { width: '1000px', margin: '10px', padding: '20px', backgroundColor: '#333', borderRadius: '8px' },
     techContainer: { marginTop: '10px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' },
     techTag: {
-      backgroundColor: '#555', // Change this to your preferred color
+      backgroundColor: '#555',
       color: '#fff',
       padding: '5px 10px',
       borderRadius: '12px',

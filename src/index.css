@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Code+Pro:wght@200;400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
-  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400; /* Set the default weight */
+  color: #eee;
+  background-color: #333; /* Background color for contrast */
 }
 
-h1, h2, h3 {
-  color: white;
+h1, h2, h3, p, a {
+  font-family: 'Source Code Pro', monospace;
+  color: #eee;
 }
 
-p, a {
-  color: grey;
-}
 
 a {
   text-decoration: none;

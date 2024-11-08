@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section style={styles.section}>
+    <section id="contact" style={styles.section}>
       <h2 style={styles.title}>Get in Touch</h2>
       <a href="https://www.linkedin.com/in/lucie-shi-65022922b/" style={styles.link}>Linkedin</a>
       <a>shilucie313@gmail.com</a>
