@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/send-message", {
+    const response = await fetch("/api/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,9 +68,9 @@ const styles = {
   title: { fontSize: '36px', fontWeight: 'bold' },
   text: { fontSize: '18px', marginBottom: '20px' },
   link: { display: 'block', margin: '10px 0', color: '#61dafb', fontSize: '18px' },
-  form: { display: "flex", flexDirection: "column", maxWidth: "400px", border: "1px solid #ccc" },
-  input: { padding: "10px", margin: "10px 0", borderRadius: "5px", border: "1px solid #ccc" },
-  textarea: { padding: "10px", margin: "10px 0", borderRadius: "5px", border: "1px solid #ccc", height: "100px" },
+  form: { display: "flex", flexDirection: "column", maxWidth: "500px", border: "1px solid #ccc", margin: "0 auto", padding: "20px", alignItems: "center", width: "90%" },
+  input: { padding: "10px", margin: "10px 0", borderRadius: "20px", border: "1px solid #ccc", width: "100%" },
+  textarea: { padding: "10px", margin: "10px 0", borderRadius: "20px", border: "1px solid #ccc", height: "100px", width: "100%" },
   button: { padding: "10px", borderRadius: "5px", backgroundColor: "#61dafb", border: "none", cursor: "pointer" }
 };
 
