@@ -5,6 +5,10 @@ export default async function handler(req, res) {
         return res.status(405).json({ message: "Method not allowed" });
     }
 
+    console.log("EMAIL:", process.env.EMAIL ? "Exists" : "Not Found");
+    console.log("PASSWORD:", process.env.PASSWORD ? "Exists" : "Not Found");
+
+
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
